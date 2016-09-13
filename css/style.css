@@ -68,7 +68,29 @@ ul#pagelist {
 .sizeOne {
 	width:250px;
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    top: -5px;
+    right: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 #left{
 	width:24%;
 	float:left;
@@ -78,7 +100,7 @@ ul#pagelist {
 
 #right{
 	width:24%;
-	float:right;
+	float:left;
 	overflow:hidden;
 	padding:10px;
 }
